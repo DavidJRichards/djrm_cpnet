@@ -1,0 +1,11 @@
+bld/
+dist/src/*.com
+dist/src/*.sym
+dist/src/*.prn
+dist/src/*.rel
+dist/src/*.hex
+tools/
+src/
+doc/
+dist/
+
