@@ -1,0 +1,11 @@
+#!/bin/bash
+# Example script to invoke a build of cpnet-z80 from this directory
+# Usage: ./build HBA=hba-name NIC=nic-name [ BUILD=build-dir ]
+# Other 'make' variables may also be specified on the commandline.
+
+build="BUILD=${PWD}/bld-SC126"
+if [[ "${*}" == *BUILD=* ]]; then
+	unset build
+fi
+
+make -C cpnet-z80 ${build} "${@}"
